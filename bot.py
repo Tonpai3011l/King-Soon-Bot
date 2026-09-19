@@ -35,7 +35,9 @@ TICKET_CHANNEL_PREFIXES = {
     "3": "ติดต่อเคลมสินค้า",
 }
 
-SETTINGS_FILE = Path(__file__).with_name("ticket_settings.json")
+SETTINGS_DIRECTORY = Path(os.getenv("SETTINGS_DIR", Path(__file__).parent))
+SETTINGS_DIRECTORY.mkdir(parents=True, exist_ok=True)
+SETTINGS_FILE = SETTINGS_DIRECTORY / "ticket_settings.json"
 CONTACT_PANEL_DEFAULTS = {
     "title": "ติดต่อแอดมิน",
     "description": "ใส่คำอธิบายสำหรับผู้ใช้ได้ที่นี่",

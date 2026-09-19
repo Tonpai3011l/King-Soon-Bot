@@ -6,6 +6,7 @@ venv/
 
 # Secrets
 .env
+data/
 
 # Editor files
 .vscode/
