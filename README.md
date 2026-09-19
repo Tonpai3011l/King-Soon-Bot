@@ -9,7 +9,7 @@
 3. ติดตั้งไลบรารี:
 
    ```powershell
-   py -m pip install -r requirements.txt
+   pip install -r requirements.txt
    ```
 
 4. คัดลอก `.env.example` เป็น `.env` แล้วใส่ Discord bot token ของคุณใน `DISCORD_TOKEN`
